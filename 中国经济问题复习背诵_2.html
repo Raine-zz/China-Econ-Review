@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>中国经济问题研究｜主题时间线复习背诵</title>
+<style>
+  :root{
+    --bg:#f7f3ec; --paper:#fffdf8; --ink:#222; --muted:#6d6258;
+    --red:#b91c1c; --red2:#dc2626; --gold:#b7791f; --blue:#1f4e79;
+    --green:#2f6f4e; --line:#e8ddcc; --shadow:0 10px 28px rgba(50,35,20,.10);
+    --radius:18px;
+  }
+  *{box-sizing:border-box} html{scroll-behavior:smooth}
+  body{margin:0;background:linear-gradient(180deg,#f7f3ec 0%,#f4efe7 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","Microsoft YaHei",Arial,sans-serif;line-height:1.68}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  .layout{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:100vh}
+  aside{position:sticky;top:0;height:100vh;overflow:auto;background:#211b17;color:#f5ead8;padding:22px 18px;border-right:1px solid rgba(255,255,255,.08)}
+  aside h1{font-size:19px;margin:0 0 8px;line-height:1.25;color:#fff}
+  aside .sub{font-size:12px;color:#d3c2aa;margin-bottom:18px}
+  .search{width:100%;padding:10px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.16);background:#302821;color:#fff;outline:none;margin-bottom:14px}
+  .search::placeholder{color:#b7aa9a}
+  nav a{display:block;padding:8px 10px;border-radius:10px;color:#f3e7d6;font-size:13.5px;margin:2px 0}
+  nav a:hover{background:#3b3128;text-decoration:none}
+  .content{padding:30px 38px 80px;max-width:1280px;margin:0 auto;width:100%}
+  .hero{background:linear-gradient(135deg,#fffdf8,#fff7ed);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);padding:30px;margin-bottom:22px}
+  .hero h2{font-size:32px;margin:0 0 10px;letter-spacing:.02em}.hero p{margin:8px 0;color:#51463d}.badge{display:inline-block;border:1px solid #e9d4b5;background:#fff7e7;color:#8a4b00;border-radius:999px;padding:4px 10px;margin:4px 5px 4px 0;font-size:12px;font-weight:600}
+  section{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px;margin:22px 0}.section-title{display:flex;align-items:center;gap:12px;margin:0 0 16px}.section-title .num{background:var(--red);color:#fff;border-radius:12px;padding:3px 10px;font-weight:700}.section-title h2{margin:0;font-size:25px}
+  h3{font-size:20px;margin:26px 0 10px;color:#3b2d25} h4{font-size:16px;margin:18px 0 6px;color:#4b3527}.muted{color:var(--muted);font-size:14px}.lead{font-size:17px;color:#44382e}.core{background:#fff7ed;border-left:5px solid var(--red);padding:13px 15px;border-radius:12px;margin:14px 0}.formula{font-weight:700;color:#7f1d1d}.exam{background:#f5faf7;border:1px solid #d8eadf;border-left:5px solid var(--green);padding:13px 15px;border-radius:12px;margin:12px 0}.warning{background:#fff7f7;border:1px solid #f0cccc;border-left:5px solid var(--red2);padding:13px 15px;border-radius:12px;margin:12px 0}.quote{background:#f8f8ff;border:1px solid #dce3f3;border-left:5px solid var(--blue);padding:13px 15px;border-radius:12px;margin:12px 0}
+  .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card{border:1px solid var(--line);background:#fffaf2;border-radius:16px;padding:15px}.card h4{margin-top:0}.card p{margin:6px 0}.pill{display:inline-block;background:#f1e5d4;border:1px solid #e5d1b6;border-radius:999px;padding:3px 9px;margin:2px 3px;font-size:12px;color:#5d4634}.bigword{font-size:24px;font-weight:800;color:var(--red);letter-spacing:.03em}.small{font-size:13px;color:#6b5f54}.kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#eee4d6;border:1px solid #dccbb3;padding:1px 6px;border-radius:6px}
+  ul,ol{padding-left:22px;margin:8px 0} li{margin:5px 0}.dense li{margin:3px 0}.compare{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:14px;border:1px solid var(--line);margin:12px 0}.compare th,.compare td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}.compare th{background:#efe1cd;text-align:left}.compare tr:last-child td{border-bottom:0}.compare td:first-child{font-weight:700;color:#5b2d20;white-space:nowrap}.mark{background:#fff0c2;padding:0 4px;border-radius:4px}
+  .timeline{position:relative;margin:16px 0 0;padding-left:28px}.timeline:before{content:"";position:absolute;left:8px;top:0;bottom:0;width:2px;background:#d6c4ad}.titem{position:relative;margin:0 0 14px;padding:13px 14px;background:#fffaf3;border:1px solid var(--line);border-radius:14px}.titem:before{content:"";position:absolute;left:-25px;top:18px;width:12px;height:12px;background:var(--red);border:3px solid #fff;border-radius:50%;box-shadow:0 0 0 1px #c8b39b}.year{font-weight:800;color:var(--red);margin-right:8px}.tag{font-size:12px;color:#fff;background:#75533e;border-radius:999px;padding:2px 8px;margin-left:6px}.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 18px}.tabbtn{border:1px solid #d4bfa6;background:#fffaf2;border-radius:999px;padding:8px 12px;cursor:pointer;color:#4b3728}.tabbtn.active{background:#7f1d1d;color:#fff;border-color:#7f1d1d}.tabpane{display:none}.tabpane.active{display:block}
+  details{border:1px solid var(--line);border-radius:14px;margin:10px 0;background:#fffaf3;overflow:hidden}summary{cursor:pointer;padding:12px 14px;font-weight:700;color:#3b2d25;background:#fbf1e3}details .inside{padding:12px 16px}.memorize{display:grid;grid-template-columns:140px 1fr;gap:8px;align-items:start;border-top:1px dashed #e1cdb2;padding-top:8px;margin-top:8px}.memorize b{color:#7f1d1d}.question{border-left:4px solid var(--gold);padding-left:12px;margin:12px 0}.answer{background:#fffdf8;border:1px solid var(--line);border-radius:12px;padding:11px 13px}.source{font-size:12px;color:#7d7065;margin-top:24px;border-top:1px solid var(--line);padding-top:12px}.hide{display:none!important}.print-note{display:none}
+  @media (max-width: 900px){.layout{display:block}aside{position:relative;height:auto}.content{padding:18px}.grid,.grid3{grid-template-columns:1fr}.memorize{grid-template-columns:1fr}.hero h2{font-size:26px}}
+  @media print{aside,.search,.tabs,.tabbtn{display:none!important}.layout{display:block}.content{padding:0;max-width:none}section,.hero{box-shadow:none;border:1px solid #ddd;break-inside:avoid}.tabpane{display:block!important}.print-note{display:block}.card{break-inside:avoid}body{background:#fff}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside>
+  <h1>中国经济问题研究</h1>
+  <div class="sub">按主题时间线 + 逐讲背诵版<br>主要依据第1—7讲 slide</div>
+  <input id="search" class="search" placeholder="搜索：锦标赛 / 征地 / 三位一体…" />
+  <nav>
+    <a href="#overview">0. 总主线</a>
+    <a href="#timeline">主题分类时间线</a>
+    <a href="#lecture1">第一讲 中国经济增长</a>
+    <a href="#lecture2">第二讲 李约瑟之谜</a>
+    <a href="#lecture3">第三讲 发展道路与传统体制</a>
+    <a href="#lecture4">第四讲 土地制度</a>
+    <a href="#lecture5">第五讲 当代改革</a>
+    <a href="#lecture6">第六讲 政治锦标赛</a>
+    <a href="#lecture7">第七讲 层层加码与官场+市场</a>
+    <a href="#qa">高频讨论题模板</a>
+    <a href="#compress">考前压缩背诵</a>
+  </nav>
+</aside>
+<main class="content">
+  <div class="hero searchable" data-keywords="总主线 中国经济 复习 背诵">
+    <h2>中国经济问题研究：主题时间线复习背诵</h2>
+    <p class="lead">背诵时不要把七讲拆成孤立知识点。课程主线是：<span class="formula">中国为何曾经领先、为何近代落后、为何1949后选择重工业和计划体制、为何1978后能转向增长、地方政府和土地制度如何成为增长机制的一部分，以及这种机制的代价。</span></p>
+    <span class="badge">政策变迁按主题分类</span><span class="badge">逐讲补充</span><span class="badge">概念卡</span><span class="badge">讨论题模板</span><span class="badge">可打印</span>
+  </div>
+
+<section id="overview" class="searchable" data-keywords="总主线 框架 课程逻辑">
+  <div class="section-title"><span class="num">0</span><h2>总主线：把七讲串起来</h2></div>
+  <div class="core"><b>一句话框架：</b>中国经济的长期演变，可以理解为“历史优势—近代逆转—重工业赶超—计划体制内生—改革开放转轨—地方政府激励—土地财政与官场市场结合—高增长及其副作用”的连续链条。</div>
+  <div class="grid3">
+    <div class="card"><h4>第一层：历史与增长事实</h4><p>第一、二讲回答“中国在全球经济中的位置如何变化”：古代中国长期强大，近代突然落后，改革开放后重新上升。</p></div>
+    <div class="card"><h4>第二层：制度选择</h4><p>第三、五讲回答“为什么选择计划经济、为什么后来改革”：重工业优先战略内生出三位一体计划体制；计划体制的问题又推动分权与增量改革。</p></div>
+    <div class="card"><h4>第三层：增长机制与代价</h4><p>第四、六、七讲回答“谁推动增长、靠什么推动、代价是什么”：土地、地方政府、政治锦标赛、层层加码、行政发包制共同塑造中国式增长。</p></div>
+  </div>
+  <div class="exam"><b>考试背诵口径：</b>不要只说“中国政府推动经济增长”。更准确的表述是：改革开放后，市场化扩大了企业和要素流动空间，同时政治锦标赛、行政发包制和土地制度给地方政府提供了强激励和可支配资源，使地方政府从单纯管制者转向招商、建设、协调和竞争的主体。但这种机制也带来重复建设、土地依赖、环境污染、地方债、GDP数据水分和公共服务不足等问题。</div>
+</section>
+
+<section id="timeline" class="searchable" data-keywords="时间线 分类 政策变迁 主题">
+  <div class="section-title"><span class="num">T</span><h2>按主题分类的政策与制度时间线</h2></div>
+  <p class="muted">点击不同主题。打印时会全部展开。</p>
+  <div class="tabs">
+    <button class="tabbtn active" data-tab="t1">增长与国际地位</button>
+    <button class="tabbtn" data-tab="t2">李约瑟之谜</button>
+    <button class="tabbtn" data-tab="t3">重工业与农业制度</button>
+    <button class="tabbtn" data-tab="t4">土地与征地</button>
+    <button class="tabbtn" data-tab="t5">社会主义与改革</button>
+    <button class="tabbtn" data-tab="t6">干部与锦标赛</button>
+    <button class="tabbtn" data-tab="t7">层层加码与官场市场</button>
+  </div>
+
+  <div id="t1" class="tabpane active">
+    <h3>主题一：中国经济增长、影响与可持续性</h3>
+    <div class="timeline">
+      <div class="titem"><span class="year">古代—1820年前后</span><span class="tag">长期表现</span><p>中国经济占世界比重长期较高，1820年前后约占全球GDP三分之一；但人均收入优势并不等同于现代工业优势。</p></div>
+      <div class="titem"><span class="year">近代以后</span><span class="tag">逆转</span><p>工业革命后西方技术和生产率迅速提升，中国在全球经济和技术体系中的相对位置下降。</p></div>
+      <div class="titem"><span class="year">1978—2015</span><span class="tag">增长奇迹</span><p>slide给出的核心事实：GDP年均增长率约9.7%，2015年GDP较1978年增长29.3倍；人均GDP年均增长率约8.7%，2015年较1978年增长20.1倍。</p></div>
+      <div class="titem"><span class="year">2009—2013</span><span class="tag">国际地位</span><p>2009年成为世界第一大出口国，2010年经济总量超过日本，2012/2013年前后成为世界最大贸易国或贸易实体。</p></div>
+      <div class="titem"><span class="year">未来判断</span><span class="tag">持续增长</span><p>持续增长取决于生产要素、产业结构、技术和制度。生产要素红利衰减后，增长必须更多依赖技术进步、要素再配置和制度效率。</p></div>
+    </div>
+  </div>
+
+  <div id="t2" class="tabpane">
+    <h3>主题二：李约瑟之谜与中国历史兴衰</h3>
+    <div class="timeline">
+      <div class="titem"><span class="year">前现代社会</span><span class="tag">领先</span><p>中国在经济规模、技术、市场和城市化方面长期处于世界前列，四大发明、宋代冶铁、较完善的土地/劳动力/产品市场均是例证。</p></div>
+      <div class="titem"><span class="year">8—12世纪</span><span class="tag">技术加速</span><p>课程强调这一时期中国技术变迁很快，甚至被称为“中国的工业革命”时期。</p></div>
+      <div class="titem"><span class="year">18世纪中叶以后</span><span class="tag">现代逆转</span><p>西方工业革命后技术进步方式转向“科学基础上的可控实验”，中国仍主要依赖经验型创新，技术变迁速度落后。</p></div>
+      <div class="titem"><span class="year">解释理论</span><span class="tag">争论</span><p>文化决定论、国家竞争论、专利保护说、高水平均衡陷阱、林毅夫“技术变迁方式改变”均试图解释“为何曾经先进、为何现代落后”。</p></div>
+      <div class="titem"><span class="year">科举机制</span><span class="tag">制度解释</span><p>科举在古代有利于大一统和人才吸纳，但也把高才能者引向儒家经典和官僚晋升，削弱数学与可控实验的人力资本投资。</p></div>
+    </div>
+  </div>
+
+  <div id="t3" class="tabpane">
+    <h3>主题三：重工业优先战略、三位一体与农业制度</h3>
+    <div class="timeline">
+      <div class="titem"><span class="year">1949—1952</span><span class="tag">巩固重建</span><p>恢复生产、抑制通胀、控制失业、土地改革和大区治理，为一五计划奠定政治经济基础。</p></div>
+      <div class="titem"><span class="year">1953—1957</span><span class="tag">一五计划</span><p>集中力量发展重工业，同时推进社会主义改造。原因是落后、国防压力、苏联示范和赶超愿望。</p></div>
+      <div class="titem"><span class="year">1953起</span><span class="tag">三位一体</span><p>宏观上扭曲价格信号，行政上计划配置资源，微观上剥夺企业自主权。计划经济并非凭空出现，而是重工业优先战略在要素稀缺条件下的内生制度安排。</p></div>
+      <div class="titem"><span class="year">1953起</span><span class="tag">统购统销</span><p>通过低价取得农产品，把农村剩余转移到城市和工业部门，即“剪刀差”。</p></div>
+      <div class="titem"><span class="year">1953—1958</span><span class="tag">合作化</span><p>互助组→初级社→高级社→人民公社。人民公社取消退出权、监督困难，导致激励弱化。</p></div>
+      <div class="titem"><span class="year">1959—1961</span><span class="tag">农业危机</span><p>粮食减产、三年困难与巨大人口损失，是合作化激励失败、政策错误和体制问题集中爆发。</p></div>
+      <div class="titem"><span class="year">1978前</span><span class="tag">绩效</span><p>剩余动员和工业比重提高，但结构失衡、资金利用率低、工业效率低、人民生活改善有限。</p></div>
+    </div>
+  </div>
+
+  <div id="t4" class="tabpane">
+    <h3>主题四：土地管理制度、征地制度与土地驱动增长</h3>
+    <div class="timeline">
+      <div class="titem"><span class="year">1947</span><span class="tag">中国土地法大纲</span><p>没收地主土地，实行耕者有其田，土地问题成为取得农民支持的重要政治基础。</p></div>
+      <div class="titem"><span class="year">1949—1952</span><span class="tag">土地改革</span><p>废除地主土地私有制，建立农民土地所有制，极大调动农业生产积极性。</p></div>
+      <div class="titem"><span class="year">1953—1977</span><span class="tag">集体所有</span><p>互助组、初级社、高级社、人民公社推动农村土地私有制转向集体所有制；同时建立国家建设征地制度。</p></div>
+      <div class="titem"><span class="year">1953</span><span class="tag">征地办法</span><p>第一部专门征地法规，强调国家建设需要和被征地者安置，但补偿采用“上限原则”，标准偏低。</p></div>
+      <div class="titem"><span class="year">1982</span><span class="tag">宪法框架</span><p>明确城市土地国家所有、农村土地集体所有，形成二元地权制度。</p></div>
+      <div class="titem"><span class="year">1982</span><span class="tag">征用土地条例</span><p>补偿原则变为保障被征地者收入和生活水平不下降；提出不得“化整为零”报批。</p></div>
+      <div class="titem"><span class="year">1986</span><span class="tag">土地管理法</span><p>明确所有权框架，提高补偿标准，征地审批由五级改为中央和省级两级。</p></div>
+      <div class="titem"><span class="year">1987</span><span class="tag">深圳第一拍</span><p>国有土地有偿出让试点成功，城镇土地使用权出让、出租、抵押的市场交易制度开始确立。</p></div>
+      <div class="titem"><span class="year">1998后</span><span class="tag">土地管理强化</span><p>严格农地转用、耕地保护和审批，农村土地非农化由政府垄断，地方政府获得强烈征地和经营城市激励。</p></div>
+      <div class="titem"><span class="year">2003后</span><span class="tag">供需错配</span><p>土地供给相对受限的城市多为沿海和大城市，土地供应偏向影响房价分化，并可能通过房价推动工资。</p></div>
+    </div>
+  </div>
+
+  <div id="t5" class="tabpane">
+    <h3>主题五：社会主义实践、行政性分权与增量改革</h3>
+    <div class="timeline">
+      <div class="titem"><span class="year">1516—19世纪</span><span class="tag">社会主义思想</span><p>从莫尔《乌托邦》、空想社会主义，到马克思恩格斯的科学社会主义，核心关注公有、市场否定、资本主义矛盾。</p></div>
+      <div class="titem"><span class="year">1918—1921</span><span class="tag">战时共产主义</span><p>苏俄为战争需要实行余粮收集、实物配给、劳动义务、工业国有化等，为世界第一个计划经济体制提供实践源头。</p></div>
+      <div class="titem"><span class="year">1920s—1930s</span><span class="tag">斯大林模式</span><p>“社会主义经济=占统治地位的国有制+计划经济”，优先发展重工业，后被许多社会主义国家包括中国仿效。</p></div>
+      <div class="titem"><span class="year">1950s中期</span><span class="tag">计划经济反思</span><p>孙冶方重视价值规律，顾准指出社会主义可以选择市场价格决策，陈云提出“三个主体、三个补充”，毛泽东在《论十大关系》中谈权力过分集中。</p></div>
+      <div class="titem"><span class="year">1958—1978</span><span class="tag">行政性分权</span><p>向地方政府放权让利、下放计划/企业/物资/投资/财政/劳动管理权，但在计划体制下导致“一放就乱、一管就死”。</p></div>
+      <div class="titem"><span class="year">1978—1993</span><span class="tag">增量改革</span><p>体制外先行：农村包产到户、非国有经济、经济特区、沿海开放和综合改革试验区，绕开国有体制存量阻力。</p></div>
+      <div class="titem"><span class="year">1984—1992</span><span class="tag">有计划商品经济</span><p>计划体制内部引入市场机制，逐步承认商品经济和市场调节作用。</p></div>
+      <div class="titem"><span class="year">1992—2003</span><span class="tag">社会主义市场经济</span><p>目标从“计划为主、市场补充”转向建立社会主义市场经济体制。</p></div>
+    </div>
+  </div>
+
+  <div id="t6" class="tabpane">
+    <h3>主题六：地方政府地位、干部制度与政治锦标赛</h3>
+    <div class="timeline">
+      <div class="titem"><span class="year">改革前后</span><span class="tag">地方政府地位</span><p>地方政府在财政收支、人事任命和资源配置中一直具有稳固地位；问题是，同样政治集权下，为何改革后行为大变？</p></div>
+      <div class="titem"><span class="year">1980s</span><span class="tag">财政联邦主义</span><p>行政分权+财政包干解释地方强激励，但无法解释改革前分权失败，也无法处理重复建设、市场分割和“一放就乱”。</p></div>
+      <div class="titem"><span class="year">1984</span><span class="tag">下管一级</span><p>干部人事制度改革后，中央主要负责省级干部，省级负责地市级干部，地方人事控制权上升。</p></div>
+      <div class="titem"><span class="year">改革开放后</span><span class="tag">考核转向</span><p>干部考核由政治忠诚逐步转向经济建设和工作实绩，GDP增长、财政收入等成为可量化竞赛指标。</p></div>
+      <div class="titem"><span class="year">2000s后</span><span class="tag">经验证据</span><p>Maskin、Li & Zhou、周黎安、Wu、Landry等研究发现相对经济绩效与晋升概率相关。</p></div>
+      <div class="titem"><span class="year">21世纪</span><span class="tag">科学发展</span><p>考核增加“廉”，2013年以后明确反对唯GDP，但这也从侧面说明GDP竞争曾长期存在。</p></div>
+      <div class="titem"><span class="year">大跃进对照</span><span class="tag">失败机制</span><p>大跃进也有锦标赛，但考核狭隘、资源高度控制、思想媒体控制和软预算约束导致失败。</p></div>
+    </div>
+  </div>
+
+  <div id="t7" class="tabpane">
+    <h3>主题七：层层加码、行政发包制与政府市场关系</h3>
+    <div class="timeline">
+      <div class="titem"><span class="year">五年计划/规划</span><span class="tag">层层加码</span><p>中央、省、市、县经济增长目标逐级提高，实际增长率又常高于宣布目标。</p></div>
+      <div class="titem"><span class="year">南巡后</span><span class="tag">加码强化</span><p>“经济发展是硬道理”后，地方围绕经济增长的竞争更激烈，对中央目标加码幅度上升。</p></div>
+      <div class="titem"><span class="year">2008危机</span><span class="tag">经济影响</span><p>中央4万亿刺激后，省级地方政府相继推出总额超过20万亿的刺激计划，体现纵向动员能力。</p></div>
+      <div class="titem"><span class="year">长期治理</span><span class="tag">行政发包制</span><p>中央保留正式权威和剩余控制权，下级获得执行权、自由裁量权和强激励，形成属地管理与责任分担。</p></div>
+      <div class="titem"><span class="year">现代中国</span><span class="tag">官场+市场</span><p>地方官员的官场竞争嵌入辖区企业的市场竞争，市场绩效反过来影响官员晋升，形成“有形之手”和“无形之手”的特殊组合。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="lecture1" class="searchable" data-keywords="第一讲 中国经济增长 成就 影响 持续增长 生产要素 问题">
+  <div class="section-title"><span class="num">1</span><h2>第一讲：中国经济增长现状、影响与持续增长</h2></div>
+  <div class="core"><b>背诵主线：</b>中国经济增长不是单纯“速度快”，而是改变了国内生活水平、世界贸易格局、全球减贫和世界经济稳定；但未来增长不能继续简单依靠人口、土地和高投入，必须依靠产业升级、技术进步和制度效率。</div>
+
+  <h3>1. 中国经济增长现状与成就</h3>
+  <div class="grid">
+    <div class="card"><h4>国内总量增长</h4><ul><li>1978—2015年GDP年均增长率约9.7%。</li><li>2015年GDP较1978年增长约29.3倍。</li><li>占世界GDP比重从1978年的1.7%上升至2015年的14.8%。</li><li>2015年为世界第二大经济体。</li></ul></div>
+    <div class="card"><h4>人均与开放成就</h4><ul><li>1978—2015年人均GDP年均增长率约8.7%。</li><li>2015年人均GDP较1978年增长约20.1倍。</li><li>货物进出口贸易总额年均增长率约20.9%。</li><li>进出口占世界比重从1978年的0.8%升至2015年的11.9%。</li></ul></div>
+  </div>
+  <div class="exam"><b>可背句：</b>改革开放后的增长奇迹，既表现为GDP和人均收入的快速提高，也表现为中国从封闭低收入经济体转向世界贸易、制造业、外汇储备和全球需求的重要节点。</div>
+
+  <h3>2. 中国经济增长的影响</h3>
+  <table class="compare">
+    <tr><th>维度</th><th>slide重点</th><th>背诵解释</th></tr>
+    <tr><td>国内影响</td><td>人民生活水平迅速提高，如“三大件”变迁。</td><td>增长最直接改变居民消费结构和生活质量，也为就业、社会稳定和改革补偿提供物质基础。</td></tr>
+    <tr><td>全球减贫</td><td>中国贫困人口大规模减少；若扣除中国，20世纪末世界贫困人口未必下降。</td><td>中国增长是世界减贫史的重要组成部分，说明中国经济不是单纯国内事件。</td></tr>
+    <tr><td>低价产品</td><td>为世界提供低价优质中国产品。</td><td>中国制造降低全球消费品成本，改善全球消费者福利。</td></tr>
+    <tr><td>稳定器</td><td>1997年亚洲金融危机人民币不贬值；2008年危机后中国较快恢复；2020年疫情中实现正增长。</td><td>中国经济规模越大，对外部危机的稳定作用越明显。</td></tr>
+    <tr><td>增长引擎</td><td>2009—2018年中国对全球GDP增量贡献率很高。</td><td>中国成为世界经济增长的重要“火车头”。</td></tr>
+  </table>
+
+  <h3>3. 对持续增长的判断</h3>
+  <div class="grid">
+    <div class="card"><h4>乐观判断</h4><p>麦迪森式判断认为，中国大陆相对于美国的发展阶段类似于当年日本、韩国、中国台湾，仍有追赶空间。</p></div>
+    <div class="card"><h4>悲观判断</h4><p>章家敦式“中国崩溃论”强调银行坏账、外贸冲击、投资下降等风险，但事实证明简单崩溃论解释力不足。</p></div>
+  </div>
+  <div class="exam"><b>更稳妥的结论：</b>中国持续增长既不是自动发生，也不是必然崩溃。核心取决于能否从要素投入型增长转向技术进步、产业升级和制度效率驱动。</div>
+
+  <h3>4. 持续增长的要求：增长来源</h3>
+  <div class="grid3">
+    <div class="card"><div class="bigword">要素</div><p>自然资源、劳动力、资本。要素增加可以直接扩大产出，但边际收益可能下降。</p></div>
+    <div class="card"><div class="bigword">结构</div><p>生产要素从低附加值部门流向高附加值部门，即使总要素不增加，也能提升产出。</p></div>
+    <div class="card"><div class="bigword">技术</div><p>技术进步提高生产率，是从高速增长转向高质量发展的关键。</p></div>
+    <div class="card"><div class="bigword">制度</div><p>制度决定激励、资源配置和技术选择效率，是理解中国增长不可忽视的变量。</p></div>
+    <div class="card"><div class="bigword">开放</div><p>国际市场提供需求、技术、资本和竞争压力，是改革开放后增长的重要背景。</p></div>
+    <div class="card"><div class="bigword">治理</div><p>地方政府激励、土地制度和行政发包制决定政策执行和资源动员能力。</p></div>
+  </div>
+
+  <h3>5. 中国经济存在的问题</h3>
+  <ul>
+    <li><b>收入不平等与城乡差距：</b>基尼系数上升，城乡、地区与部门差距扩大。</li>
+    <li><b>资源利用效率低与环境压力：</b>高投入、高消耗带来环境污染和资源约束。</li>
+    <li><b>外部失衡：</b>长期“双顺差”和巨额外汇储备引发国际争议，也反映内需结构问题。</li>
+    <li><b>投资过热：</b>地方政府和国企投资冲动可能造成产能过剩、债务和周期波动。</li>
+    <li><b>腐败、教育、社会发展滞后：</b>高速增长未自动解决公共服务和治理质量问题。</li>
+  </ul>
+  <div class="warning"><b>考试提醒：</b>第一讲不是只背数字。数字是“现象”，真正要回答的是：增长从哪里来、带来什么影响、为什么可能不可持续、下一步靠什么继续增长。</div>
+</section>
+
+<section id="lecture2" class="searchable" data-keywords="第二讲 李约瑟之谜 高水平均衡陷阱 科举 科学革命">
+  <div class="section-title"><span class="num">2</span><h2>第二讲：李约瑟之谜和中国历史兴衰</h2></div>
+  <div class="core"><b>背诵主线：</b>李约瑟之谜不是问“中国为什么一直落后”，而是问“为什么中国前现代先进、现代却落后”。能同时解释这两点的理论才有说服力。</div>
+
+  <h3>1. 李约瑟之谜的概念</h3>
+  <div class="quote"><b>标准表述：</b>为什么在前现代社会中国科学技术非常发达？为什么在现代社会中国又成为技术落后的国家，没有继续维持原来的领先？</div>
+  <div class="exam"><b>答题开头：</b>李约瑟之谜的难点在于“二重解释”：既要解释前现代中国为什么先进，也要解释为什么工业革命和现代科学革命没有发生在中国。</div>
+
+  <h3>2. 历史现状：前现代成就与近代逆转</h3>
+  <table class="compare">
+    <tr><th>方面</th><th>前现代中国的成就</th><th>为什么重要</th></tr>
+    <tr><td>经济</td><td>1820年中国约占全球GDP三分之一，直到19世纪中叶仍是大经济体。</td><td>说明中国不是一直贫穷落后。</td></tr>
+    <tr><td>技术</td><td>四大发明、宋代冶铁、铁制农具和武器。</td><td>说明中国曾有高水平经验性技术创新。</td></tr>
+    <tr><td>市场</td><td>春秋战国以来土地私有、劳动力流动、产品市场和投机行为活跃。</td><td>反驳“没有市场所以落后”的简单说法。</td></tr>
+    <tr><td>城市化</td><td>15、16世纪以前城市繁荣，杭州、苏州等见诸文献。</td><td>说明中国商业和城市文明高度发达。</td></tr>
+    <tr><td>逆转</td><td>18世纪中叶西方工业革命后，中国技术和生产率迅速落后。</td><td>谜题核心是技术变迁速度差异。</td></tr>
+  </table>
+
+  <h3>3. 解释理论</h3>
+  <details open><summary>文化决定论</summary><div class="inside"><p>认为儒家文化中庸保守、不重科学，导致中国无法产生科学革命。问题是：儒家文化长期存在，但中国在前现代仍长期先进，因此单纯文化论难以解释“为何先先进、后落后”。</p></div></details>
+  <details open><summary>国家竞争论</summary><div class="inside"><p>认为欧洲国家竞争推动技术和制度创新，中国大一统削弱竞争。问题是：欧洲宗教和意识形态统一也可能压制异端；国家竞争对科学革命的直接贡献并不清楚。</p></div></details>
+  <details open><summary>专利保护说</summary><div class="inside"><p>认为欧洲有专利制度，所以激励发明。问题是：早期科学革命未必主要出于商业动机，且15世纪产权保护并不完善。</p></div></details>
+  <details open><summary>高水平均衡陷阱</summary><div class="inside"><p>伊懋可的假说强调“高农业水平、高人口增长、低工业水平”：人口增加导致人均耕地下降、剩余减少、劳动力廉价，从而抑制对新技术特别是劳动节约技术的需求。</p><p><b>课程批评：</b>剩余不仅取决于人均土地，还取决于技术；劳动节约技术需求不仅取决于劳动成本，也取决于技术成本。若技术进步足够快，陷阱逻辑就不自洽。</p></div></details>
+  <details open><summary>林毅夫：技术变迁方式改变</summary><div class="inside"><p>前现代技术创新主要来自经验性尝试错误，中国人口多、农民和工匠多，所以经验型创新概率高。现代工业革命依赖数学、科学知识和可控实验，欧洲完成从经验型创新到实验型创新的转变，中国未能完成。</p><p><b>科举机制：</b>科举在古代有助于维持大一统、吸纳人才和减少革命动机，但把高才能者引向四书五经和官僚晋升，降低了数学与实验能力投资。</p></div></details>
+
+  <h3>4. 背诵版总结</h3>
+  <div class="exam">前现代中国先进，是因为人口多、市场和城市发达、经验型技术创新基础广；现代中国落后，是因为工业革命后技术创新机制从经验转向科学实验，而科举制度形成的人才激励不利于数学和可控实验能力积累。因此，同一个制度在前现代可能有效，在现代可能成为障碍。</div>
+</section>
+
+<section id="lecture3" class="searchable" data-keywords="第三讲 中国经济发展道路 一五计划 重工业 三位一体 农业 统购统销 人民公社 改革开放前">
+  <div class="section-title"><span class="num">3</span><h2>第三讲：中国经济发展道路、重工业优先与传统体制</h2></div>
+  <div class="core"><b>背诵主线：</b>新中国初期选择重工业优先，不只是意识形态选择，也受国防、赶超和要素稀缺约束影响。为了在资本和外汇极度稀缺下发展资本密集型重工业，政府内生出“三位一体”的计划经济体制。</div>
+
+  <h3>1. 一五计划的背景与目标</h3>
+  <ul>
+    <li><b>1949—1952：巩固和重建。</b>恢复生产、抑制通货膨胀、控制失业、扩大政治控制、土地改革。</li>
+    <li><b>一五计划主要任务：</b>集中力量进行工业化建设；加快推进各经济领域的社会主义改造。</li>
+    <li><b>为何重工业：</b>太落后、国防压力、“落后就要挨打”、苏联经验、许多发展中国家也采用赶超战略。</li>
+  </ul>
+
+  <h3>2. 为什么重工业优先内生出计划经济？</h3>
+  <div class="grid">
+    <div class="card"><h4>重工业特征</h4><ul><li>建设周期长，五年甚至十年。</li><li>机器设备需要进口。</li><li>一次性投入巨大。</li><li>资本密集、短期不直接改善消费。</li></ul></div>
+    <div class="card"><h4>贫穷农业国约束</h4><ul><li>剩余少，资本积累不足，利率高。</li><li>出口少，外汇少，进口设备贵。</li><li>资金分散，难以集中动员。</li></ul></div>
+  </div>
+  <div class="exam"><b>逻辑链：</b>发展重工业需要低成本资本和外汇，但市场条件下资本、外汇和原材料都稀缺且昂贵。因此政府必须压低价格、计划分配资源、控制企业剩余，计划经济由此内生。</div>
+
+  <h3>3. “三位一体”的制度安排</h3>
+  <table class="compare">
+    <tr><th>层次</th><th>措施</th><th>目的</th><th>影响</th></tr>
+    <tr><td>宏观</td><td>扭曲价格信号：压低利率、汇率、原材料价格、工资和生活必需品价格。</td><td>以低成本获得资本品，并提高企业利润用于再投资。</td><td>市场均衡被打破，资金、外汇和生活资料出现短缺。</td></tr>
+    <tr><td>行政</td><td>计划配置资源：按产业优先顺序配给资金、外汇、原材料和消费品。</td><td>在供给小于需求时保证重工业优先。</td><td>形成配给制和短缺经济。</td></tr>
+    <tr><td>微观</td><td>剥夺企业自主权，企业国有化，“人财物、产供销”由国家控制。</td><td>防止企业把剩余投向利润更高的轻工业，保证重工业投资。</td><td>企业效率低、缺乏自主激励。</td></tr>
+  </table>
+
+  <h3>4. 农业制度：为重工业服务的制度链</h3>
+  <div class="grid">
+    <div class="card"><h4>统购统销</h4><p>1953年开始对粮食和棉花等统购；城市统销通过票证供应。其本质是压低农产品价格，通过“剪刀差”把农村剩余转移到城市和重工业。</p></div>
+    <div class="card"><h4>合作化与公社化</h4><p>统购低价压低农民积极性，为扩大农业产量，政府推动合作化以追求规模经济；但监督困难和退出权剥夺导致激励失败。</p></div>
+    <div class="card"><h4>地区粮食自给</h4><p>“省长抓米袋子、市长抓菜篮子”来自统购统销后的调拨激励扭曲：余粮省不愿多交，缺粮省依赖调入。</p></div>
+    <div class="card"><h4>城乡隔绝户籍</h4><p>重工业资本密集，吸纳就业有限；为防止农民进城分享城市补贴和引发失业，形成城乡隔绝的户籍制度。</p></div>
+  </div>
+
+  <h3>5. 合作化运动结果与退出权假说</h3>
+  <ul>
+    <li><b>互助组：</b>1953—1954年，土地和耕畜仍属各户，农忙互助。</li>
+    <li><b>初级社：</b>1954年起，20—30户，土地集中，按土地/农具分红+按劳分配，入社自愿、退社自由。</li>
+    <li><b>高级社：</b>1956—1957年，150—200户，完全按劳分配，名义上仍有退社自由。</li>
+    <li><b>人民公社：</b>1958年，一公社规模巨大，按需分配、不准单干。1959—1961年出现严重农业危机。</li>
+  </ul>
+  <div class="exam"><b>退出权假说：</b>合作社要成功，需要社员之间能互相监督。退社自由能威胁偷懒者；一旦退社权被剥夺，勤劳社员无法通过退出惩罚偷懒社员，合作化激励机制瓦解。</div>
+
+  <h3>6. 1978年前经济发展的绩效与影响</h3>
+  <table class="compare">
+    <tr><th>正面</th><td>剩余动员能力强，工业部门比重提高，建立较完整重工业体系。</td></tr>
+    <tr><th>负面</th><td>结构不平衡、资金利用率低、工业生产效率低、人民生活水平改善有限。</td></tr>
+    <tr><th>连接后文</th><td>传统体制的问题成为改革开放的制度背景，也解释了为什么后来要从计划经济转向市场经济。</td></tr>
+  </table>
+</section>
+
+<section id="lecture4" class="searchable" data-keywords="第四讲 土地制度 土地管理制度 二元地权 征地制度 地方政府债务 土地财政 房价 工资">
+  <div class="section-title"><span class="num">4</span><h2>第四讲：中国土地制度、征地制度及其经济影响</h2></div>
+  <div class="core"><b>背诵主线：</b>土地制度是中国经济增长的重要发动机：它通过二元地权、政府垄断城市土地一级市场和低价征地，为工业化、城市化和地方政府竞争提供资源；但也带来耕地流失、补偿不足、社会冲突、地方债和房价分化。</div>
+
+  <h3>1. 土地制度为什么重要</h3>
+  <ul><li>土地是最重要的生产资源之一。</li><li>土地制度是国家基础制度，构成生产关系和经济关系基础。</li><li>中国土地制度包含三个核心：土地管理制度、二元地权制度、征地制度。</li></ul>
+
+  <h3>2. 土地管理制度：所有权问题</h3>
+  <div class="timeline">
+    <div class="titem"><span class="year">解放战争时期</span><p>《中国土地法大纲》：没收地主土地，实行耕者有其田。作用是动员农民，成为取得政权的重要条件。</p></div>
+    <div class="titem"><span class="year">1949—1952</span><p>《土地改革法》：废除地主土地私有制，建立农民土地所有制，3亿多农民获得7亿多亩土地。</p></div>
+    <div class="titem"><span class="year">1953—1977</span><p>社会主义改造：互助组—初级社—高级社—人民公社，农村土地私有制转为集体所有制。</p></div>
+    <div class="titem"><span class="year">1978—1986</span><p>废除人民公社，实行集体所有制下家庭承包经营；1982年宪法明确城市土地国有、农村土地集体所有。</p></div>
+    <div class="titem"><span class="year">1987—1997</span><p>建立城镇国有土地有偿出让制度。深圳“第一拍”标志土地使用权出让、出租、抵押市场制度确立。</p></div>
+  </div>
+
+  <h3>3. 二元地权制度的核心</h3>
+  <table class="compare">
+    <tr><th>制度</th><th>内容</th><th>经济含义</th></tr>
+    <tr><td>城市土地</td><td>国家所有。</td><td>城市建设用地由政府控制一级市场。</td></tr>
+    <tr><td>农村土地</td><td>农民集体所有。</td><td>农民拥有承包经营权，但集体土地转为城市建设用地通常需国家征收。</td></tr>
+    <tr><td>所有权/使用权分离</td><td>国有土地出让使用权，农村土地承包经营。</td><td>在不改变公有制所有权前提下引入市场交易和激励。</td></tr>
+  </table>
+
+  <h3>4. 征地制度发展、措施与问题</h3>
+  <details open><summary>建国初期：国家需要=公共利益，补偿低</summary><div class="inside"><p>1950年《土地改革法》和《城市郊区土地改革条例》首次涉及征收；1953年《关于国家建设征用土地办法》成为专门法规。补偿采用“上限原则”，一般按最近三至五年产量总值，公共利益界定模糊。</p></div></details>
+  <details open><summary>去私有化阶段：公共利益继续模糊</summary><div class="inside"><p>1958年修订征地办法，仍沿用国家兴建厂矿、铁路、交通、水利、国防等工程的宽泛定义。土地所有权集体化后，征地更容易服务于国家和地方建设。</p></div></details>
+  <details open><summary>市场经济转型：补偿提高，但激励扭曲仍在</summary><div class="inside"><p>1982年《国家建设征用土地条例》提高补偿，提出保障被征地者收入和生活水平不下降；1986年《土地管理法》将补偿上限提高到30倍，审批由五级改为中央和省级两级。</p><p>但问题是，补偿原则仍不是土地未来价值或市场价值，无法反映土地非农化后的巨大增值收益。</p></div></details>
+
+  <h3>5. 征地制度存在的问题与成因</h3>
+  <div class="grid">
+    <div class="card"><h4>问题</h4><ul><li>每年大量征地，且主要是农用地和耕地。</li><li>城市化方式偏外延扩张，开发区、新区、新城依赖新增建设用地。</li><li>耕地保护和社会稳定目标未充分实现。</li><li>失地农民增加，征地纠纷和上访增多。</li></ul></div>
+    <div class="card"><h4>成因</h4><ul><li>补偿原则错误：只保证生活水平不下降，不考虑农地社会保障功能和未来增值。</li><li>地方政府强征地激励：政绩竞争、城市建设和招商引资需要土地。</li><li>宪法基础矛盾：城市土地国有与公共利益征收之间界限模糊。</li><li>集体所有者不能充分代表单个农民利益。</li></ul></div>
+  </div>
+
+  <h3>6. 对中国经济的影响</h3>
+  <table class="compare">
+    <tr><th>增长机制</th><td>低价征地降低工业用地和城市建设成本，推动高速工业化和快速城市化。</td></tr>
+    <tr><th>地方财政</th><td>土地出让和土地增值收益成为地方政府城市经营的重要资金来源，缓解分税制后预算内收入不足。</td></tr>
+    <tr><th>债务风险</th><td>地方政府可用土地未来收益融资，形成“土地—平台—债务—建设”的循环；若土地价格和出让收入下降，债务偿付风险上升。</td></tr>
+    <tr><th>房价分化</th><td>土地供需错配导致大城市和沿海地区土地供给相对不足，房价更容易上升；偏向中西部土地供应也会影响东部工资和成本。</td></tr>
+    <tr><th>可持续性</th><td>依赖低价征地和土地出让的增长模式受到耕地红线、社会冲突、房价压力和债务风险制约，难以长期持续。</td></tr>
+  </table>
+
+  <h3>7. 改革方向</h3>
+  <ul><li>赋予被征地农民参与征地补偿价格形成机制的权利。</li><li>赋予集体建设用地自由流转权利。</li><li>改革土地税制，减少地方政府对一次性土地出让收入的依赖。</li></ul>
+</section>
+
+<section id="lecture5" class="searchable" data-keywords="第五讲 社会主义 斯大林 战时共产主义 行政性分权 增量改革 经济特区">
+  <div class="section-title"><span class="num">5</span><h2>第五讲：社会主义制度发展与中国经济改革</h2></div>
+  <div class="core"><b>背诵主线：</b>改革不是突然出现的，而是计划经济体制内部矛盾长期累积后的结果。中国改革的关键不是一次性私有化，而是通过增量改革、体制外先行和地方试验，逐步从计划经济走向市场经济。</div>
+
+  <h3>1. 社会主义制度的思想与实践来源</h3>
+  <table class="compare">
+    <tr><th>阶段</th><th>内容</th><th>课程意义</th></tr>
+    <tr><td>空想社会主义</td><td>傅立叶、圣西门、欧文；1516年莫尔《乌托邦》。</td><td>强调财产共有、反市场、反货币，反映资本主义早期社会不平等问题。</td></tr>
+    <tr><td>科学社会主义</td><td>马克思、恩格斯提出资本主义主要矛盾：生产社会化与生产资料私有的矛盾。</td><td>为社会主义制度提供理论基础。</td></tr>
+    <tr><td>列宁实践</td><td>无产阶级专政、国有代替私有、计划经济、按劳分配。</td><td>把国家强制力量引入社会主义经济管理。</td></tr>
+    <tr><td>战时共产主义</td><td>1918—1921年，余粮收集、实物配给、劳动义务、工业国有化。</td><td>作为战争临时措施有动员能力，但也造成严重经济社会问题。</td></tr>
+    <tr><td>斯大林模式</td><td>占统治地位的国有制+计划经济，激进重工业优先。</td><td>苏联高增长和工业化经验影响中国一五计划和传统体制。</td></tr>
+  </table>
+
+  <h3>2. 国内对计划经济的早期反思</h3>
+  <ul>
+    <li><b>问题：</b>国有企业成为上级行政机关附属物，“人财物、供产销”全部由国家计划决定，企业失去活力，服务质量下降。</li>
+    <li><b>孙冶方：</b>强调价值规律，提出提高利润指标在计划经济管理中的地位。</li>
+    <li><b>顾准：</b>指出社会主义的问题是废除了市场制度，提高效率可以让企业根据市场价格做决策。</li>
+    <li><b>陈云：</b>“三个主体、三个补充”：国家和集体为主体，个体经营、自由生产和自由市场为补充。</li>
+    <li><b>毛泽东《论十大关系》：</b>反思权力过分集中，主张在巩固中央统一领导前提下扩大地方权力。</li>
+  </ul>
+
+  <h3>3. 行政性分权：改革准备阶段</h3>
+  <div class="grid">
+    <div class="card"><h4>下放内容</h4><ul><li>计划管理权</li><li>企业管辖权</li><li>物资分配权</li><li>基建审批、投资和信贷管理权</li><li>财政税收权</li><li>劳动管理权</li></ul></div>
+    <div class="card"><h4>结果</h4><p>在计划经济框架下，分权并不等于市场化。地方获得行政资源后，容易争夺资源、大上项目、浮夸和重复建设，形成“一放就乱、一管就死”。</p></div>
+  </div>
+  <div class="warning"><b>与第六讲联系：</b>地方分权本身不能解释改革开放后的成功，因为改革前也有分权，但结果是大跃进式混乱。关键差别在于是否有市场机制、企业主体、外部竞争和正确考核指标。</div>
+
+  <h3>4. 增量改革：体制外先行</h3>
+  <table class="compare">
+    <tr><th>问题</th><th>做法</th><th>效果</th></tr>
+    <tr><td>国企改革阻力大</td><td>先扩大国企自主权，但利润基数难定，出现苦乐不均和鞭打快牛。</td><td>体制内改革初期不顺。</td></tr>
+    <tr><td>寻找新增长点</td><td>农村包干到户、包产到户，发展非国有经济。</td><td>绕开存量国有部门，释放农民和民营部门激励。</td></tr>
+    <tr><td>对接国际市场</td><td>1979年广东、福建特殊政策；1980年深圳、珠海、汕头、厦门经济特区；1985年开放沿海港口城市。</td><td>形成改革开放“试验田”，以开放倒逼国内改革。</td></tr>
+  </table>
+
+  <h3>5. 五个改革阶段</h3>
+  <div class="timeline">
+    <div class="titem"><span class="year">1958—1978</span><p>经济体制改革的准备：行政性分权与对计划体制的反思。</p></div>
+    <div class="titem"><span class="year">1978—1984</span><p>计划体制内部引入市场机制。</p></div>
+    <div class="titem"><span class="year">1984—1992</span><p>发展有计划商品经济。</p></div>
+    <div class="titem"><span class="year">1992—2003</span><p>建立社会主义市场经济体制。</p></div>
+    <div class="titem"><span class="year">2003至今</span><p>完善社会主义市场经济阶段。</p></div>
+  </div>
+  <div class="exam"><b>可背句：</b>中国改革的基本方向是从计划经济走向市场经济，但路径不是“休克疗法”，而是增量改革、体制外先行、地方试验和逐步扩散。</div>
+</section>
+
+<section id="lecture6" class="searchable" data-keywords="第六讲 地方政府 政治锦标赛 财政联邦主义 晋升约束 考核标准 负面影响 局限 对策 大跃进">
+  <div class="section-title"><span class="num">6</span><h2>第六讲：地方政府独特地位与政治锦标赛</h2></div>
+  <div class="core"><b>背诵主线：</b>地方政府长期拥有财政、人事和资源配置上的重要地位，但“地位”本身不能解释改革后经济增长。关键是改革开放后地方官员的晋升激励、经济绩效考核、市场竞争和地方可支配资源结合起来，形成政治锦标赛。</div>
+
+  <h3>1. 地方政府的独特地位：为什么还不能解释增长？</h3>
+  <ul>
+    <li><b>财政角度：</b>地方政府在改革前后都有较稳固的财政收支地位。</li>
+    <li><b>人事角度：</b>地方政府一直握有重要权力。</li>
+    <li><b>资源配置角度：</b>大量计划和产品配置集中在各级地方政府。</li>
+  </ul>
+  <div class="question"><b>根本问题：</b>同样政治集权、同样地方重要，为什么改革前后经济绩效完全不同？改革开放究竟改变了什么基本条件？</div>
+
+  <h3>2. 财政联邦主义解释及其不足</h3>
+  <div class="grid">
+    <div class="card"><h4>解释</h4><p>中国特色财政联邦主义认为，行政分权让地方有经济决策权，财政包干让地方收入越高留存越多，从而激励地方维护市场、扶持企业、推动增长。</p></div>
+    <div class="card"><h4>不足</h4><ul><li>不是放权越多越好：改革前两次大规模分权导致混乱。</li><li>“一放就乱，一收就死”。</li><li>带来重复建设、市场分割、地方保护、地区差距和宏观不稳定。</li><li>默认地方政府行为同质、要素自由流动，现实更复杂。</li></ul></div>
+  </div>
+  <div class="exam"><b>结论：</b>财政联邦主义是中国经济奇迹的原因之一，但不能彻底解释政治体制如何把地方政府转化为增长推动者。</div>
+
+  <h3>3. 政治锦标赛：概念与基本前提</h3>
+  <div class="quote"><b>定义：</b>处于同一级别的政府官员为了获得晋升而相互竞争的博弈，也称晋升锦标赛。比赛标准由上级政府决定，如GDP增长率、财政收入、招商引资、污染治理等。</div>
+  <table class="compare">
+    <tr><th>制度性条件</th><th>解释</th></tr>
+    <tr><td>人事权集中</td><td>上级掌握下级官员晋升和任免，可以设定竞赛标准。</td></tr>
+    <tr><td>可量化指标</td><td>GDP、财政收入等指标可观察、可比较。</td></tr>
+    <tr><td>承诺与执行</td><td>上级要相对严格地按绩效考核和任免，否则竞赛失效。</td></tr>
+    <tr><td>绩效可分离</td><td>不同地区具有同构性，经济绩效可比较。</td></tr>
+    <tr><td>官员能影响绩效</td><td>地方官员掌握审批、产业政策、土地批租、贷款担保等资源，能影响辖区经济。</td></tr>
+  </table>
+
+  <h3>4. 晋升约束与干部考核标准</h3>
+  <div class="grid">
+    <div class="card"><h4>晋升路径约束</h4><ul><li>中央—省—市—县—乡镇五级结构。</li><li>逐级淘汰，下一轮参赛者必须是上一轮优胜者。</li><li>从最底层到副省级即使最顺利也需约35年。</li></ul></div>
+    <div class="card"><h4>年龄与任期约束</h4><ul><li>五年任期，同一职位连续两个任期后通常不再推荐同职。</li><li>达到年龄后退居二线或退休。</li><li>官员市场类似内部劳动力市场，退出成本高，形成锁定效应。</li></ul></div>
+  </div>
+  <table class="compare">
+    <tr><th>阶段</th><th>考核重点</th><th>意义</th></tr>
+    <tr><td>改革开放前</td><td>政治忠诚、服从命令。</td><td>能动员政治运动，但不保证经济效率。</td></tr>
+    <tr><td>十一届三中全会后</td><td>经济改革与发展，重点考核工作实绩。</td><td>形成“为晋升而增长”的激励。</td></tr>
+    <tr><td>21世纪后</td><td>科学发展、增加“廉”，反对唯GDP。</td><td>试图修正GDP竞赛的负面影响。</td></tr>
+  </table>
+
+  <h3>5. 经验证据与影响因素</h3>
+  <ul>
+    <li>Maskin等发现相对经济绩效排名提升与中央委员数量增加相关。</li>
+    <li>Li & Zhou、周黎安发现辖区GDP增长越快，官员晋升概率越高，并与相对绩效有关。</li>
+    <li>Wu等地级市数据发现书记和市长相对于前任GDP增长率越高，晋升概率越高。</li>
+    <li>Landry等发现绩效对晋升的作用随行政层级下降而增强。</li>
+    <li>官员年龄、来源、任期、异地交流、背景都会影响经济行为和投资周期。</li>
+  </ul>
+
+  <h3>6. 负面影响、局限与改进</h3>
+  <div class="grid">
+    <div class="card"><h4>负面影响</h4><ul><li>地方保护主义。</li><li>重复建设和恶性竞争。</li><li>地区收入差距扩大。</li><li>公共品供给效率低。</li><li>腐败、工业灾难、环境污染。</li><li>为增长利用土地、信贷和国企投资造成风险。</li></ul></div>
+    <div class="card"><h4>局限</h4><ul><li>基层晋升概率极低，大多数人激励不足。</li><li>竞争过强可能诱发数据造假、输送政绩。</li><li>若晋升被跑官买官、裙带关系替代，锦标赛失效。</li><li>过度GDP导向牺牲长期质量和公共服务。</li></ul></div>
+    <div class="card"><h4>改进</h4><ul><li>增加向上流动性，定期换人。</li><li>拓展晋升空间和职级晋升。</li><li>多维度考核：环境、民生、债务、风险。</li><li>强化透明、公正和问责。</li></ul></div>
+    <div class="card"><h4>注意副作用</h4><p>强行年轻化和频繁换人可能导致短期主义；拓展职位可能带来机构膨胀。因此改进不是简单增加激励，而是平衡激励、约束和长期绩效。</p></div>
+  </div>
+
+  <h3>7. 为什么大跃进时期锦标赛失败？</h3>
+  <table class="compare">
+    <tr><th>原因</th><th>解释</th></tr>
+    <tr><td>高度集权</td><td>中央通过党体系高度控制人事，政治忠诚压倒经济理性。</td></tr>
+    <tr><td>考核狭隘</td><td>竞争围绕粮食和钢铁产量，牺牲其他经济指标。</td></tr>
+    <tr><td>思想与媒体控制</td><td>异议被压制，浮夸难以被纠正。</td></tr>
+    <tr><td>资源高度控制</td><td>市场不再配置资源，分权只是政府内部放权，地方只追求规模和指标。</td></tr>
+    <tr><td>软预算约束</td><td>地方投资和动员不承担真实成本，失败风险由上级和社会承担。</td></tr>
+  </table>
+</section>
+
+<section id="lecture7" class="searchable" data-keywords="第七讲 层层加码 行政发包制 政府与市场 官场市场 产业政策 张维迎 林毅夫">
+  <div class="section-title"><span class="num">7</span><h2>第七讲：层层加码、行政发包制与政府—市场关系</h2></div>
+  <div class="core"><b>背诵主线：</b>政治锦标赛是横向激励，层层加码是纵向激励；行政发包制解释中央如何把任务层层下达并让地方执行；“官场+市场”解释地方政府为何既干预市场又受市场约束。</div>
+
+  <h3>1. 层层加码：概念、表现与解释</h3>
+  <div class="grid">
+    <div class="card"><h4>概念</h4><p>“晋升锦标赛”是横向激励，压力来自同级官员；“层层加码”是纵向激励，压力来自上级官员。</p></div>
+    <div class="card"><h4>表现</h4><p>中央、省、市、县的经济增长目标逐级提高；实际增长率往往又高于计划阶段宣布的目标。</p></div>
+  </div>
+  <div class="exam"><b>理论解释：</b>层层加码不是简单风险规避，而是“层层分包”的行政体制和多层级官员锦标赛共同作用。中央确定目标后，各级政府逐级承诺、逐级动员；每一级官员为在本级竞争中胜出，都倾向于提出高于上级平均目标的指标。</div>
+
+  <h3>2. 加码程度的影响因素</h3>
+  <ul><li><b>年龄：</b>年龄越接近晋升窗口，激励越强；过了晋升窗口，激励衰减。</li><li><b>来源：</b>中央或地方来源不同，可能影响施政资源、晋升预期和加码策略。</li><li><b>任期：</b>新官上任更可能加码以制造政绩，任期后期也可能为晋升冲刺。</li><li><b>经济基础：</b>原有GDP水平、产业结构和地方财政能力影响加码空间。</li></ul>
+
+  <h3>3. 层层加码的经济影响</h3>
+  <table class="compare">
+    <tr><th>影响</th><th>解释</th></tr>
+    <tr><td>危机应对能力</td><td>2008年中央4万亿刺激后，省级地方政府一个月内竞相出台总额超过20万亿的刺激计划，体现强动员能力。</td></tr>
+    <tr><td>宏观波动</td><td>换届后新官更有增长冲动，投资热情层层加码，容易导致过热；过热后中央又常用一刀切方式降温。</td></tr>
+    <tr><td>GDP数据水分</td><td>地方为达成高目标和制造超额完成，可能对数据注水，导致地方GDP之和长期高于全国GDP。</td></tr>
+  </table>
+
+  <h3>4. 行政发包制：概念、特征、形式、范围</h3>
+  <div class="quote"><b>定义：</b>在统一权威之下，上级与下级之间嵌入发包关系。中央保留正式权威和剩余控制权，但把具体执行权和大量自由裁量权交给下级。</div>
+  <table class="compare">
+    <tr><th>特征</th><th>具体含义</th></tr>
+    <tr><td>行政权分配</td><td>发包方拥有人事控制、监察、指导、审批和剩余控制权；承包方拥有执行权、决策权和实际控制权。</td></tr>
+    <tr><td>经济激励</td><td>承包人拥有一定剩余索取权，财政预算和人员福利与努力和绩效相关。</td></tr>
+    <tr><td>内部控制</td><td>结果导向、人格化责任分担。属地管理强调“谁主管，谁负责”。</td></tr>
+  </table>
+  <h4>具体形式</h4>
+  <ul><li>中央制定大政方针，下级具体实施；中央保留决策权、否决权和干预权。</li><li>任务逐级分解、层层传达、层层部署。</li><li>计划生育、信访包保责任制、河长制、“由某某牵头”等都是发包形式。</li></ul>
+  <h4>发包程度差异</h4>
+  <table class="compare">
+    <tr><th>发包程度</th><th>例子</th><th>解释</th></tr>
+    <tr><td>低发包</td><td>国防、外交、铁路、海关、航天工程、国有银行、南水北调等。</td><td>中央直接控制，地方自由裁量较少。</td></tr>
+    <tr><td>高发包</td><td>教育、医疗卫生、环境治理、扶贫救济、社会保障、食品安全、安全监管等。</td><td>高度属地管理，任务下沉到基层。</td></tr>
+    <tr><td>高发包+高竞争</td><td>招商引资、维稳、计生、竞技体育、灾害重建、大规模流行疾病控制。</td><td>既有纵向压力，也有横向竞争，动员强。</td></tr>
+    <tr><td>高发包+低竞争</td><td>医疗、教育、环保、社保、食品安全、区域合作、安全监管。</td><td>纵向责任重，但横向晋升竞争弱，容易治理不足。</td></tr>
+  </table>
+
+  <h3>5. 行政发包制与政治锦标赛的关联</h3>
+  <div class="exam"><b>核心关系：</b>中国行政体制是纵向发包与横向竞争的结合。纵向发包解决“中央如何把任务交给地方执行”，横向锦标赛解决“地方为什么努力完成并超过目标”。二者结合解释强动员，也解释层层加码、短期主义和责任下压。</div>
+
+  <h3>6. 政府与市场关系：不同学者观点</h3>
+  <table class="compare">
+    <tr><th>观点</th><th>核心主张</th><th>课程评价</th></tr>
+    <tr><td>自由放任/有限政府</td><td>张维迎强调政府应保护人身和财产安全，给企业家自由和公平竞争环境；反对产业政策。</td><td>强调市场和企业家精神，但假定政府能“安静离场”，忽视政府行为如何被约束和塑造。</td></tr>
+    <tr><td>有为政府</td><td>林毅夫强调不同发展阶段政府应因时因地扶持产业，同时培育市场、纠正市场失灵。</td><td>强调产业政策和政府协调作用，但容易假定政府高尚无私、先知先觉。</td></tr>
+    <tr><td>发展型国家</td><td>政府通过产业政策、财政补贴和价格扭曲扶持战略产业。</td><td>解释东亚经验的一部分，但世界银行也强调“把价格搞对”和市场协调。</td></tr>
+    <tr><td>官场+市场</td><td>地方官员官场竞争嵌入企业市场竞争，企业市场绩效又影响官员晋升。</td><td>通过双重竞争机制解释中国政府与市场边界模糊、地方政府积极作为及其约束来源。</td></tr>
+  </table>
+
+  <h3>7. “官场+市场”理论</h3>
+  <div class="grid">
+    <div class="card"><h4>基本机制</h4><p>地方官员为了提高辖区经济绩效，动员产业政策、基础设施、行政服务、土地和贷款支持，提高辖区企业竞争力。</p></div>
+    <div class="card"><h4>双向嵌入</h4><p>官场竞争嵌入市场竞争：地方政策效果要接受市场检验。市场竞争嵌入官场竞争：企业背后有地方政府资源支持。</p></div>
+    <div class="card"><h4>正面作用</h4><p>改善行政服务、招商引资、基础设施建设、保护非国有资本产权、促进地方产业集聚。</p></div>
+    <div class="card"><h4>负面作用</h4><p>政企合谋、土地违法、环境污染、地方债、高房价、矿难、假冒伪劣等。</p></div>
+  </div>
+  <div class="exam"><b>背诵句：</b>“官场+市场”不是说政府替代市场，也不是说市场完全主导政府，而是地方政府的晋升竞争被市场绩效约束，市场竞争又被地方政府资源动员强化。它解释了为什么中国既有强政府干预，又能形成激烈市场竞争。</div>
+</section>
+
+<section id="qa" class="searchable" data-keywords="讨论题 答题模板 高频问题">
+  <div class="section-title"><span class="num">Q</span><h2>高频讨论题答题模板</h2></div>
+  <details open><summary>1. 为什么中国改革开放后能够高速增长？</summary><div class="inside answer"><p>可从四层回答：第一，市场化和对外开放释放企业、农民和要素流动的激励；第二，增量改革绕开存量计划体制阻力，使非国有经济、乡镇企业、经济特区成为新增长点；第三，地方政府在政治锦标赛下有强烈招商引资和发展经济动机；第四，土地制度和行政发包制为地方政府提供了资源动员和执行能力。但这种增长方式也带来土地依赖、重复建设、环境污染、地方债和区域差距。</p></div></details>
+  <details open><summary>2. 为什么重工业优先会导致计划经济？</summary><div class="inside answer"><p>重工业资本密集、周期长、依赖进口设备；新中国初期资本少、外汇少、剩余少。若依赖市场，资本和外汇价格高，重工业无法低成本获得资源。因此政府必须压低利率和汇率，压低工资和生活必需品价格，并用行政配给把资源优先分给重工业，同时控制企业剩余。由此形成宏观扭曲价格、行政计划配置、微观剥夺自主权的“三位一体”体制。</p></div></details>
+  <details open><summary>3. 为什么财政联邦主义解释不够？</summary><div class="inside answer"><p>它能解释地方有自主权和财政留存后为何愿意发展经济，但不能解释改革前分权为何导致混乱，也低估了行政分权的负面后果，如地方保护、重复建设和宏观不稳定。更完整的解释还要加入市场化、干部晋升激励、政治锦标赛和官场市场竞争。</p></div></details>
+  <details open><summary>4. 征地制度怎样推动增长，又为什么有问题？</summary><div class="inside answer"><p>征地制度通过低价把农村集体土地转为城市国有建设用地，降低工业化和城市化成本，并给地方政府提供土地出让收入和融资基础。但补偿通常不反映土地市场价值和未来增值，地方政府又有强烈征地激励，导致耕地流失、失地农民、社会冲突、地方债和房价分化。</p></div></details>
+  <details open><summary>5. 大跃进时期也有锦标赛，为什么失败？</summary><div class="inside answer"><p>因为当时锦标赛的目标过于狭隘，围绕钢铁和粮食产量，牺牲其他经济指标；资源配置高度行政化，没有市场检验；思想和媒体控制压制纠错；软预算约束使地方不承担真实成本；高度集权下政治忠诚压倒经济理性。因此锦标赛本身不是充分条件，必须有合适指标、市场约束和有效问责。</p></div></details>
+  <details open><summary>6. 层层加码与政治锦标赛有什么区别？</summary><div class="inside answer"><p>政治锦标赛是横向激励，压力来自同级官员的晋升竞争；层层加码是纵向激励，压力来自上级任务下达和逐级承诺。二者结合在行政发包制中：中央把目标发包给省，省发包给市，市发包给县；每一级为在本级横向竞争中胜出，又主动把目标加高。</p></div></details>
+  <details open><summary>7. “官场+市场”如何超越“有限政府”和“有为政府”之争？</summary><div class="inside answer"><p>有限政府强调市场和企业家，但容易假定政府能自动退出；有为政府强调产业政策和协调，但容易假定政府能准确识别产业方向。“官场+市场”强调政府行为本身是由晋升竞争、市场竞争和地方资源约束内生塑造的。地方政府既会积极干预，也会受企业市场绩效检验，因此中国经验不是纯市场主导，也不是纯政府主导。</p></div></details>
+</section>
+
+<section id="compress" class="searchable" data-keywords="考前压缩 背诵 口诀">
+  <div class="section-title"><span class="num">10</span><h2>考前10分钟压缩背诵版</h2></div>
+  <div class="grid">
+    <div class="card"><h4>第一讲</h4><p>增长事实：GDP、人均、贸易、减贫、全球稳定。持续增长靠要素、结构、技术、制度；问题是不平等、环境、外部失衡、投资过热。</p></div>
+    <div class="card"><h4>第二讲</h4><p>李约瑟之谜=前现代先进+现代落后。文化、竞争、专利、高水平均衡陷阱都不完整；林毅夫强调经验创新转向科学实验，科举改变人才激励。</p></div>
+    <div class="card"><h4>第三讲</h4><p>重工业优先在资本/外汇/剩余稀缺下内生出计划经济：宏观价格扭曲、行政资源配置、微观剥夺企业自主权。农业统购统销、公社化、户籍服务于重工业。</p></div>
+    <div class="card"><h4>第四讲</h4><p>土地制度=二元地权+政府垄断城市土地一级市场+征地制度。低价征地推动工业化城市化，但带来耕地、补偿、上访、地方债、房价分化。</p></div>
+    <div class="card"><h4>第五讲</h4><p>社会主义实践从战时共产主义到斯大林模式。中国早期行政性分权导致“一放就乱”，改革开放后走增量改革、体制外先行、特区开放。</p></div>
+    <div class="card"><h4>第六讲</h4><p>地方政府地位本身不能解释增长。政治锦标赛=人事权集中+量化指标+相对绩效+地方可控资源。正面是强激励，负面是重复建设、污染、腐败、短期主义。</p></div>
+    <div class="card"><h4>第七讲</h4><p>层层加码=纵向压力，锦标赛=横向压力。行政发包制解释任务下达和属地责任；官场+市场解释政府干预和市场竞争并存。</p></div>
+    <div class="card"><h4>总句</h4><p>中国式增长是市场化、地方政府激励、土地资源动员和行政发包制共同作用的结果；它创造高增长，也积累结构性风险。</p></div>
+  </div>
+  <div class="print-note">打印提示：本页已自动展开全部标签页，适合另存为PDF。</div>
+  <div class="source">资料说明：本HTML按用户整理重点重构，并依据课程第1—7讲slide补充。部分数据为slide中的历史数据口径，复习时以课程材料为准。</div>
+</section>
+</main>
+</div>
+<script>
+  const search = document.getElementById('search');
+  search.addEventListener('input', () => {
+    const q = search.value.trim().toLowerCase();
+    document.querySelectorAll('.searchable').forEach(el => {
+      if(!q){ el.classList.remove('hide'); return; }
+      const text = (el.innerText + ' ' + (el.dataset.keywords||'')).toLowerCase();
+      el.classList.toggle('hide', !text.includes(q));
+    });
+  });
+  document.querySelectorAll('.tabbtn').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      document.querySelectorAll('.tabbtn').forEach(b=>b.classList.remove('active'));
+      document.querySelectorAll('.tabpane').forEach(p=>p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.tab).classList.add('active');
+    })
+  });
+</script>
+</body>
+</html>
